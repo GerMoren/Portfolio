@@ -9,7 +9,7 @@ const greeting = {
   username: "German Moren",
   title: "Hi all, I'm German",
   subTitle: emoji(
-    `Civil engineer and Full Stack Web Development. My working principle is learning by doing.
+    `Civil engineer and Full Stack Web Developer. My working principle is learning by doing.
 
     \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
   ),
