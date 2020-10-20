@@ -33,9 +33,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          <li>
+          {/* <li>
             <a href="#opensource">Open Source</a>
-          </li>
+          </li> */}
           {/* <li>
             <a href="#achievements">Achievements</a>
           </li>
