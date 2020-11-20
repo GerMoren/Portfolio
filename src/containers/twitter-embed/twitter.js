@@ -1,4 +1,4 @@
-import React, { Suspense, setState, useContext } from "react";
+import React, { Suspense, useContext } from "react";
 import "./twitter.css";
 import Loading from "../loading/Loading";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
@@ -14,7 +14,7 @@ function timeOut() {
     if (!document.getElementById("twitter").innerHTML.includes("iframe")) {
       document.getElementById("twitter").innerHTML = cantDisplayError;
     }
-  }, 10000);
+  }, 5000);
 }
 var widthScreen = window.screen.width;
 
@@ -31,7 +31,7 @@ export default function Twitter() {
               screenName={twitterDetails.userName}
               options={{ height: 400, width: { widthScreen } }}
               placeholder={renderLoader()}
-              autoHeight={false}
+              autoHeight={true}
               borderColor="#fff"
               key={isDark ? "1" : "2"}
               theme={isDark ? "dark" : "light"}

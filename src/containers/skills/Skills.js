@@ -46,7 +46,10 @@ export default function Skills() {
                     }
                   >
                     {skills}
-                    <a href="https://vivero.vercel.app/home" target="_blank">
+                    <a
+                      href="https://vivero.vercel.app/home"
+                      //  target="_blank"
+                    >
                       E-commerce
                     </a>
                   </p>

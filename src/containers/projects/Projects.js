@@ -6,6 +6,7 @@ import Button from "../../components/button/Button";
 import { openSource, socialMediaLinks } from "../../portfolio";
 import { StyleConsumer } from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -16,7 +17,7 @@ export default function Projects() {
   const { isDark } = useContext(StyleConsumer);
   useEffect(() => {
     getRepoData();
-  });
+  }, [isDark]);
 
   function getRepoData() {
     const client = new ApolloClient({

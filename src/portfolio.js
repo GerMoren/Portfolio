@@ -24,6 +24,8 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/germanmoren/",
   gmail: "morengerman91@gmail.com",
   twitter: "https://www.twitter.com/MorenGer_",
+  whatsapp: "https://api.whatsapp.com/send/?phone=%2B5493442670833",
+  instagram: "https://www.instagram.com/ingmg91/",
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -97,8 +99,8 @@ const educationInfo = {
         `HTML5 | CSS3 | JavaScript | Git | Basic Testing`,
         `Data Structures, algorithms, Big O, Functional VS OOP.`,
         `AJAX | Webpack | ReactJS | Redux | React-Redux`,
-        `NodeJs | Web servers (Express)`,
-        `SQL | Postgres | authentication`,
+        `NodeJs | Web servers (Express) | TypeScript`,
+        `SQL | Postgres | MySQL | authentication`,
       ],
     },
     {
@@ -115,7 +117,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend", //Insert stack or technology you have experience in
@@ -123,7 +125,7 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%",
+      progressPercentage: "80%",
     },
     {
       Stack: "Programming",
@@ -133,44 +135,29 @@ const techStack = {
 };
 
 // Your top 3 work experiences
-
 const workExperiences = {
-  viewExperiences: false, //Set it to true to show workExperiences Section
+  viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Back-End Developer",
+      company: "Chiper S.A.",
+      companylogo: require("./assets/images/newLogoChiper.svg"),
+      date: "October 2020 – Present",
+      desc: `Node.js Developer, responsible for managing the interchange of data between the server and the users. My primary focus is the development of all server-side logic, definition and maintenance of different microservices, and ensuring high performance and responsiveness to requests from the front-end. 
+      I am responsible for integrating the front-end elements built by my co-workers into the application.`,
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Integration of user-facing elements developed by front-end developers with server-side logic",
+        "Writing reusable, testable, and efficient code",
+        "Design and implementation of low-latency, high-availability, and performant applications",
+        "Implementation of security and data protection",
+        "Integration of data storage solutions",
       ],
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "GerMoren", // Change to your github username to view your profile in Contact Section.
@@ -178,7 +165,6 @@ const openSource = {
 };
 
 // Some Big Projects You have worked with your company
-
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -195,7 +181,6 @@ const bigProjects = {
 };
 
 // Your Achievement Section Include Your Certification Talks and More
-
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
@@ -255,7 +240,6 @@ const achievementSection = {
 };
 
 // Blogs Section
-
 const blogSection = {
   title: "Blogs",
   subtitle:
@@ -279,7 +263,6 @@ const blogSection = {
 };
 
 // Talks Sections
-
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -297,11 +280,9 @@ const talkSection = {
 };
 
 // Podcast Section
-
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
   // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
@@ -317,10 +298,10 @@ const contactInfo = {
 };
 
 //Twitter Section
-
 const twitterDetails = {
   userName: "MorenGer_", //Replace "twitter" with your twitter username without @
 };
+
 export {
   greeting,
   socialMediaLinks,

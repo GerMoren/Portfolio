@@ -15,7 +15,7 @@
 
 .prof-title {
   margin: 0;
-  font-size: 40px;
+  font-size: 65px;
   font-weight: 400;
 }
 
@@ -25,6 +25,7 @@
 
 .opp-div {
   padding-bottom: 1rem;
+  margin-top: 15px;
 }
 
 .row {
@@ -44,16 +45,17 @@
 
 .bio-text {
   line-height: 30px;
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .desc-prof {
   line-height: 45px;
-  font-size: 19px;
+  font-size: 35px;
 }
 
 .subTitle {
   color: #868e96;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
