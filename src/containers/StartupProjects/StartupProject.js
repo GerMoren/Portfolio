@@ -6,7 +6,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   function openProjectInNewWindow(url) {
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
   const { isDark } = useContext(StyleContext);
@@ -26,9 +26,10 @@ export default function StartupProject() {
           </p>
           <div className="startup-projects-main">
             <div className="startup-project-text">
-              {bigProjects.projects.map((project) => {
+              {bigProjects.projects.map((project, index) => {
                 return (
                   <div
+                    key={index}
                     className="saaya-health-div"
                     onClick={() => openProjectInNewWindow(project.link)}
                   >

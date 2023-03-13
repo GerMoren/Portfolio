@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
@@ -10,6 +11,7 @@ export default function socialMedia() {
           href={socialMediaLinks.github}
           className="icon-button github"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="fab fa-github"></i>
           <span></span>
@@ -110,7 +112,7 @@ export default function socialMedia() {
           className="icon-button whatsapp"
           target="_blank"
         >
-          <i class="fab fa-whatsapp"></i>
+          <i className="fab fa-whatsapp"></i>
           <span></span>
         </a>
       ) : null}

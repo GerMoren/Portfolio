@@ -4,6 +4,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
+  min-height: 140px;
 }
 .repo-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
@@ -13,8 +14,8 @@
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  font-size: 13px;
-  color: rgb(106, 115, 125);
+  font-size: 16px;
+  color: rgb(20, 68, 122);
 }
 
 .repo-left-stat {
@@ -74,6 +75,9 @@
 .dark-card-mode {
   background-color: #171c28 !important;
   color:white;
+  border-radius: 16px;
+  border: 3px solid #55198b;
+  box-shadow: -0.4px -0.4px #653490, 0.4em 0 0.4em #451870;
 }
 .dark-card-mode p {
   color:white;
