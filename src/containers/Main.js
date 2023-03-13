@@ -8,13 +8,13 @@ import Education from "./education/Education";
 import WorkExperience from "./workExperience/WorkExperience";
 // import StartupProject from "./StartupProjects/StartupProject";
 // import Achievement from "./achievement/Achievement";
-// import Blogs from "./blogs/Blogs";
+import Blogs from "./blogs/Blogs";
 // import Talks from "./talks/Talks";
 // import Twitter from "./twitter-embed/twitter";
 // import Podcast from "./podcast/Podcast";
 import Projects from "./projects/Projects";
-import Profile from "./profile/Profile";
-// import Contact from "./contact/Contact";
+// import Profile from "./profile/Profile";
+import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
 import "./Main.css";
@@ -45,17 +45,17 @@ export default class Main extends Component {
           <Greeting />
           <Skills />
           <StackProgress />
-          <Education />
           <WorkExperience />
+          <Education />
           {/* <StartupProject /> */}
           {/* <Achievement /> */}
-          {/* <Blogs /> */}
+          <Blogs />
           {/* <Talks /> */}
           {/* <Twitter /> */}
           {/* <Podcast /> */}
           <Projects />
-          <Profile />
-          {/* <Contact /> */}
+          {/* <Profile /> */}
+          <Contact />
           <Footer />
           <Top />
         </StyleProvider>

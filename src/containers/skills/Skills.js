@@ -23,9 +23,9 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {skillsSection.title}
             </h1>
-            <p
+            {/* <p
               className={
                 isDark
                   ? "dark-mode subTitle skills-text-subtitle"
@@ -33,10 +33,9 @@ export default function Skills() {
               }
             >
               {skillsSection.subTitle}
-            </p>
-            <SoftwareSkill />
+            </p> */}
             <div>
-              {skillsSection.skills.map((skills) => {
+              {skillsSection.skills.map((skills, index) => {
                 return (
                   <p
                     className={
@@ -44,18 +43,14 @@ export default function Skills() {
                         ? "dark-mode subTitle skills-text"
                         : "subTitle skills-text"
                     }
+                    key={index}
                   >
                     {skills}
-                    <a
-                      href="https://vivero.vercel.app/home"
-                      //  target="_blank"
-                    >
-                      E-commerce
-                    </a>
                   </p>
                 );
               })}
             </div>
+            <SoftwareSkill />
           </div>
         </Fade>
       </div>

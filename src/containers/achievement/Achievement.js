@@ -6,10 +6,10 @@ import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const { isDark } = useContext(StyleContext);
-  function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+  // function openUrlInNewTab(url) {
+  //   var win = window.open(url, "_blank");
+  //   win.focus();
+  // }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">
@@ -35,9 +35,10 @@ export default function Achievement() {
             </p>
           </div>
           <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card) => {
+            {achievementSection.achievementsCards.map((card, index) => {
               return (
                 <AchievementCard
+                  key={index}
                   isDark={isDark}
                   cardInfo={{
                     title: card.title,
